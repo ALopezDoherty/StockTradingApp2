@@ -4,7 +4,108 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Stock Data Landing Page</title>
-   <link rel="stylesheet" href="styles.css">
+   <Style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: DarkSlateGrey;
+        color: white;
+    }
+
+    /* Top navigation bar */
+        .top-nav {
+            width: 100%;
+            background-color: #222;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .nav-btn {
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: font-weight 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #222;
+            font-weight: bold;
+        }
+
+
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+            gap: 20px;
+            width: 80%;
+            margin: 50px auto; /* Center the grid */
+        }
+
+        .stock-button {
+            background-color: white;
+            color: DarkSlateGrey;
+            border: 2px solid #444;
+            padding: 20px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .stock-button img {
+            display: block;
+            margin: 0 auto 10px;
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+        }
+
+        .stock-button:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark background with opacity */
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            color: black;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            cursor: pointer;
+        }.blurred {
+            filter: blur(5px); /* Adjust the blur intensity as needed */
+            pointer-events: none; 
+        }
+   </Style>
 
 </head>
 <body>
