@@ -5,5 +5,5 @@ from django.http import HttpResponse
 
 
 # Test View
-def say_hello(request):
+def home(request):
     return render(request, "Page.html")
